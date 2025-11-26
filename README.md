@@ -80,19 +80,19 @@ Une application Android de gestion de bibliothèque personnelle permettant d'org
 ## 📸 Captures d'écran
 
 ### Acceuil
-![Acceuil](Acceil.png)
+![Acceuil](Screnshoot/Acceil.png)
 
 ### Détails du Livre
-![Détails](activitiy_details.png)
+![Détails](Screnshoot/activitiy_details.png)
 
 ### Ajouter un Livre
-![Ajouter](pour%20ajoute.png)
+![Ajouter](Screnshoot/pour%20ajoute.png)
 
 ### Modifier un Livre
-![Modifier](pour%20modifier.png)
+![Modifier](Screnshoot/pour%20modifier.png)
 
 ### Évaluation
-![Évaluation](Evaluation.png)
+![Évaluation](Screnshoot/Evaluation.png)
 
 ##  Développement
 
