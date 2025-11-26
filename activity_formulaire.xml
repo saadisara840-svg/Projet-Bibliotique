@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ajouter / Modifier un Livre"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"/>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Titre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <EditText
+                    android:id="@+id/titre"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Entrer le titre"
+                    android:textColor="#747678"
+                    android:background="@drawable/input_style"
+                    android:padding="10dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:text="Auteur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <EditText
+                    android:id="@+id/auteur"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Entrer l'auteur"
+                    android:background="@drawable/input_style"
+                    android:padding="10dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Pages -->
+                <TextView
+                    android:text="Pages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <EditText
+                    android:id="@+id/page"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Nombre de pages"
+                    android:inputType="number"
+                    android:background="@drawable/input_style"
+                    android:padding="10dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Genre -->
+                <TextView
+                    android:text="Genre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <Spinner
+                    android:id="@+id/genre"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/input_style"
+                    android:padding="6dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Description -->
+                <TextView
+                    android:text="Description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <EditText
+                    android:id="@+id/desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:gravity="top"
+                    android:hint="Entrer la description"
+                    android:background="@drawable/input_style"
+                    android:padding="10dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Image -->
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp">
+
+                    <ImageView
+                        android:id="@+id/imgId"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_launcher_background"
+                        android:background="#DDDDDD"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="20dp"/>
+
+                    <Button
+                        android:id="@+id/btnImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choisir une image" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="35dp">
+
+            <Button
+                android:id="@+id/btnA"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:text="Ajouter"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#43A047"/>
+
+            <Button
+                android:id="@+id/btnM"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:text="Modifier"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#FB8C00"/>
+
+            <Button
+                android:id="@+id/btnR"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Retour"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#3949AB"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
